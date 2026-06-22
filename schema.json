@@ -1,0 +1,1153 @@
+{
+  "templateId": "blushtheme",
+  "templateName": "Blush & Gold",
+  "sections": [
+    {
+      "id": "general",
+      "label": "Global",
+      "icon": "settings",
+      "guideCaption": "Falling petals appear across the whole page after the envelope entry.",
+      "type": "flat",
+      "layoutGroups": [
+        {
+          "id": "animation",
+          "label": "Animation",
+          "fields": [
+            "petalsEnabled"
+          ]
+        },
+        {
+          "id": "typography",
+          "label": "Typography",
+          "fields": [
+            "headingFont"
+          ]
+        },
+        {
+          "id": "colors",
+          "label": "Theme colors",
+          "fields": [
+            "colorPalette"
+          ]
+        }
+      ],
+      "fields": [
+        {
+          "key": "petalsEnabled",
+          "label": "Falling petals animation",
+          "type": "toggle",
+          "default": true,
+          "description": "Soft rose & gold petals after guests enter the site."
+        },
+        {
+          "key": "headingFont",
+          "label": "Section heading font",
+          "type": "font-variants",
+          "default": "great-vibes",
+          "description": "Font for section titles (Our Story, Events, RSVP, etc.)."
+        },
+        {
+          "key": "colorPalette",
+          "label": "Theme colors",
+          "type": "palette-variant",
+          "default": "blush-gold",
+          "description": "Primary blush and accent gold — all shades are derived automatically."
+        }
+      ]
+    },
+    {
+      "id": "audio",
+      "label": "Background music",
+      "icon": "music",
+      "guideCaption": "The floating music control guests use after opening the envelope.",
+      "type": "object",
+      "layoutGroups": [
+        {
+          "id": "control",
+          "label": "Music control",
+          "fields": [
+            "enabled"
+          ]
+        },
+        {
+          "id": "track",
+          "label": "Background song",
+          "fields": [
+            "src"
+          ]
+        }
+      ],
+      "fields": [
+        {
+          "key": "enabled",
+          "label": "Show music control",
+          "type": "toggle",
+          "default": true
+        },
+        {
+          "key": "src",
+          "label": "Background song",
+          "type": "audio-variants",
+          "default": "romantic-strings",
+          "uploadFolder": "audio",
+          "description": "Choose a curated track or upload your own."
+        }
+      ]
+    },
+    {
+      "id": "entry",
+      "label": "Entry video",
+      "icon": "mail",
+      "guideCaption": "Full-screen video guests tap to open before the invitation.",
+      "type": "object",
+      "layoutGroups": [
+        {
+          "id": "style",
+          "label": "Entry style",
+          "fields": [
+            "entryVariantId"
+          ]
+        },
+        {
+          "id": "message",
+          "label": "Welcome message",
+          "fields": [
+            "message"
+          ]
+        }
+      ],
+      "fields": [
+        {
+          "key": "enabled",
+          "label": "Show entry gate",
+          "type": "toggle",
+          "default": true
+        },
+        {
+          "key": "entryVariantId",
+          "label": "Entry Video",
+          "type": "entry-variant",
+          "default": "entry-video-classic",
+          "description": "Hover to preview styles. Click to apply the entry video to your site."
+        },
+        {
+          "key": "videoUrl",
+          "label": "Entry video (MP4)",
+          "type": "url",
+          "uploadFolder": "entry",
+          "hidden": true
+        },
+        {
+          "key": "overlayStyle",
+          "label": "Text overlay",
+          "type": "select",
+          "hidden": true,
+          "default": "light",
+          "options": [
+            {
+              "value": "dark",
+              "label": "Light text"
+            },
+            {
+              "value": "light",
+              "label": "Dark text"
+            }
+          ]
+        },
+        {
+          "key": "message",
+          "label": "Welcome Message",
+          "type": "textarea",
+          "multiline": true,
+          "maxLength": 100,
+          "maxLines": 4,
+          "maxCharsPerLine": 32,
+          "hint": "Up to 4 short lines on the entry video — keep it crisp like the demo.",
+          "suggestionToggleLabel": "Suggest welcome messages & blessings",
+          "suggestions": [
+            "With love and blessings,\nwe invite you to the wedding of:\nMeenal & Avinash",
+            "With love and blessings,\nwe invite you to the wedding of:\nSwati & Rishabh",
+            "Together with our families,\nwe invite you to celebrate\nour wedding day.",
+            "With the blessings of Ganesh,\nwe invite you to our wedding.",
+            "Seeking your blessings at\nour sacred wedding celebration."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hero",
+      "label": "Hero Section",
+      "icon": "heart",
+      "guideCaption": "Top of the invite: symbol, blessings, and bride & groom lines.",
+      "type": "object",
+      "layoutGroups": [
+        {
+          "id": "symbol",
+          "label": "Symbol & blessing",
+          "fields": [
+            "ganeshImageUrl",
+            "godQuote"
+          ]
+        },
+        {
+          "id": "invitation",
+          "label": "Invitation line",
+          "fields": [
+            "introLine1",
+            "connector"
+          ]
+        },
+        {
+          "id": "couple",
+          "label": "Couple details",
+          "fields": [
+            "displayOrder",
+            "bride",
+            "groom"
+          ]
+        }
+      ],
+      "fields": [
+        {
+          "key": "enabled",
+          "label": "Show hero section",
+          "type": "toggle",
+          "default": true
+        },
+        {
+          "key": "ganeshImageUrl",
+          "label": "Religious symbol",
+          "type": "religious-symbol",
+          "default": "symbol-ganesh-gold",
+          "description": "PNG with transparent background works best (80×80px on site)."
+        },
+        {
+          "key": "godQuote",
+          "label": "Blessing / god quote",
+          "type": "textarea",
+          "multiline": true,
+          "maxLength": 120,
+          "maxLines": 2,
+          "maxCharsPerLine": 40,
+          "hint": "Max 2 lines. Press Enter for a new line.",
+          "description": "Short italic blessing below the symbol.",
+          "suggestionToggleLabel": "Suggest mantras & blessings",
+          "suggestions": [
+            "ॐ गं गणपतये नमः",
+            "वक्रतुण्ड महाकाय\nसूर्यकोटि समप्रभ",
+            "सर्वे भवन्तु सुखिनः",
+            "Om Gan Ganapataye Namah",
+            "May Lord Ganesha bless\nour sacred union.",
+            "With divine grace,\nwe begin our journey together."
+          ]
+        },
+        {
+          "key": "introLine1",
+          "label": "Invitation line",
+          "type": "textarea",
+          "multiline": true,
+          "maxLength": 350,
+          "maxLines": 4,
+          "maxCharsPerLine": 42,
+          "hint": "Invitation phrasing only — no names (couple names and parents appear in the fields below).",
+          "suggestionToggleLabel": "Suggest invitation lines",
+          "suggestions": [
+            "With love and blessings,\ncordially invite you to the wedding celebration of their beloved daughter",
+            "With the blessings of our families,\nwe joyfully request your gracious presence at the wedding ceremony of",
+            "Seeking your blessings,\nwe invite you to witness the sacred wedding rituals of",
+            "Together with our families,\nwe request the honour of your presence at the wedding celebration of",
+            "With heavenly blessings,\nwe delightfully invite you to celebrate the wedding of their beloved child"
+          ]
+        },
+        {
+          "key": "connector",
+          "label": "Connector word",
+          "type": "text",
+          "maxLength": 20,
+          "placeholder": "with",
+          "suggestionToggleLabel": "Suggest connector words",
+          "suggestions": [
+            "with",
+            "and",
+            "&"
+          ]
+        },
+        {
+          "key": "displayOrder",
+          "label": "Display order",
+          "type": "hero-display-order",
+          "default": "bride-first",
+          "description": "Which partner appears first on the invitation."
+        },
+        {
+          "key": "bride",
+          "label": "Bride Details",
+          "type": "group",
+          "fields": [
+            {
+              "key": "name",
+              "label": "Name",
+              "type": "text",
+              "maxLength": 40,
+              "hint": "Script name — keep it short for mobile."
+            },
+            {
+              "key": "familyLine",
+              "label": "Family Line",
+              "type": "text",
+              "multiline": true,
+              "maxLength": 100,
+              "maxLines": 2,
+              "maxCharsPerLine": 38,
+              "hint": "Press Enter if you need two lines.",
+              "suggestionToggleLabel": "Suggest family lines",
+              "suggestions": [
+                "Daughter of Mr. & Mrs. Sharma",
+                "Daughter of Mr. & Mrs. Patel",
+                "Daughter of Mr. & Mrs. Desai"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "groom",
+          "label": "Groom Details",
+          "type": "group",
+          "fields": [
+            {
+              "key": "name",
+              "label": "Name",
+              "type": "text",
+              "maxLength": 40,
+              "hint": "Script name — keep it short for mobile."
+            },
+            {
+              "key": "familyLine",
+              "label": "Family Line",
+              "type": "text",
+              "multiline": true,
+              "maxLength": 100,
+              "maxLines": 2,
+              "maxCharsPerLine": 38,
+              "hint": "Press Enter if you need two lines.",
+              "suggestionToggleLabel": "Suggest family lines",
+              "suggestions": [
+                "Son of Mr. & Mrs. Sharma",
+                "Son of Mr. & Mrs. Patel",
+                "Son of Mr. & Mrs. Desai"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "saveTheDate",
+      "label": "Save the Date",
+      "icon": "calendar",
+      "guideCaption": "Wedding date, optional scratch reveal, and optional countdown timer.",
+      "type": "object",
+      "layoutGroups": [
+        {
+          "id": "visibility",
+          "label": "Section options",
+          "fields": [
+            "scratchEnabled",
+            "countdownEnabled"
+          ]
+        },
+        {
+          "id": "date",
+          "label": "Wedding date",
+          "fields": [
+            "weddingDate"
+          ]
+        },
+        {
+          "id": "wording",
+          "label": "Scratch wording",
+          "fields": [
+            "wording"
+          ]
+        }
+      ],
+      "fields": [
+        {
+          "key": "enabled",
+          "label": "Show save the date section",
+          "type": "toggle",
+          "default": true
+        },
+        {
+          "key": "weddingDate",
+          "label": "Wedding Date",
+          "type": "date",
+          "description": "Required for scratch reveal and countdown."
+        },
+        {
+          "key": "scratchEnabled",
+          "label": "Show scratch reveal",
+          "type": "toggle",
+          "default": true,
+          "description": "Guests scratch three hearts to reveal the date. If off, the countdown (when enabled) appears right after the hero."
+        },
+        {
+          "key": "countdownEnabled",
+          "label": "Show countdown",
+          "type": "toggle",
+          "default": true,
+          "description": "Live timer to your wedding day. After scratch reveal, it animates in; without scratch, it shows immediately."
+        },
+        {
+          "key": "wording",
+          "label": "Scratch instructions",
+          "type": "text",
+          "maxLength": 80,
+          "maxLines": 2,
+          "maxCharsPerLine": 40,
+          "hint": "Shown above the scratch cards. One short line works best.",
+          "suggestionToggleLabel": "Suggest scratch instructions",
+          "suggestions": [
+            "Scratch below to reveal our wedding date",
+            "Scratch each heart to unveil our special day",
+            "With love and blessings — scratch to reveal the date",
+            "Seeking your blessings —\nscratch to reveal our wedding date",
+            "Together with our families —\nscratch below to reveal the date"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "story",
+      "label": "Our Beautiful Moments",
+      "icon": "camera",
+      "guideCaption": "Polaroid cards or a framed photo / video slider in the middle of the scroll.",
+      "type": "object",
+      "layoutGroups": [
+        {
+          "id": "mode",
+          "label": "Display mode",
+          "fields": [
+            "displayMode"
+          ]
+        },
+        {
+          "id": "titles",
+          "label": "Section titles",
+          "fields": [
+            "heading",
+            "subheading"
+          ]
+        },
+        {
+          "id": "polaroids",
+          "label": "Polaroids",
+          "fields": [
+            "items"
+          ],
+          "fullWidth": true
+        },
+        {
+          "id": "swiper",
+          "label": "Slider",
+          "fields": [
+            "slides",
+            "footnote"
+          ],
+          "fullWidth": true
+        }
+      ],
+      "fields": [
+        {
+          "key": "enabled",
+          "label": "Show story section",
+          "type": "toggle",
+          "default": true
+        },
+        {
+          "key": "displayMode",
+          "label": "Section layout",
+          "type": "story-display-mode",
+          "default": "polaroids",
+          "description": "Click a preview to choose — only one layout appears on your site.",
+          "options": [
+            {
+              "value": "polaroids",
+              "label": "Polaroid gallery",
+              "description": "Scroll-driven polaroid cards with captions",
+              "preview": "/form-guides/blushtheme/story-polaroids.jpg"
+            },
+            {
+              "value": "swiper",
+              "label": "Photo / video frame",
+              "description": "One framed slider — video, one photo, or photos that loop",
+              "preview": "/form-guides/blushtheme/story-frame.jpg"
+            }
+          ]
+        },
+        {
+          "key": "heading",
+          "label": "Section Heading",
+          "type": "text",
+          "maxLength": 40,
+          "hint": "Short title above the polaroids.",
+          "suggestionToggleLabel": "Suggest headings",
+          "suggestions": [
+            "Forever Us",
+            "Our Journey",
+            "How We Met",
+            "Love Story",
+            "The Two of Us"
+          ]
+        },
+        {
+          "key": "subheading",
+          "label": "Section Subheading",
+          "type": "text",
+          "maxLength": 80,
+          "hint": "One line under the heading.",
+          "suggestionToggleLabel": "Suggest subheadings",
+          "suggestions": [
+            "How we became us, told in moments",
+            "A few of our favourite chapters",
+            "The story so far",
+            "Moments we hold close to our hearts",
+            "Every chapter leading to our forever"
+          ]
+        },
+        {
+          "key": "items",
+          "label": "Story Cards",
+          "type": "subarray",
+          "showWhen": {
+            "field": "displayMode",
+            "equals": "polaroids"
+          },
+          "default": [],
+          "maxItems": 5,
+          "sortable": true,
+          "itemLabel": "Memory",
+          "summaryKey": "caption",
+          "summarySubtitleKey": "text",
+          "defaultItem": {
+            "image": "",
+            "caption": "",
+            "text": ""
+          },
+          "itemPresets": [
+            {
+              "caption": "How We Met",
+              "text": "Where our beautiful story began."
+            },
+            {
+              "caption": "First Adventure",
+              "text": "A day full of laughter and joy."
+            },
+            {
+              "caption": "A Special Moment",
+              "text": "Love and warmth in every frame."
+            },
+            {
+              "caption": "Together Always",
+              "text": "Side by side through it all."
+            },
+            {
+              "caption": "Cherished Memory",
+              "text": "A snapshot of our journey so far."
+            }
+          ],
+          "fields": [
+            {
+              "key": "image",
+              "label": "Photo",
+              "type": "image-upload",
+              "uploadFolder": "story"
+            },
+            {
+              "key": "caption",
+              "label": "Title",
+              "type": "text",
+              "maxLength": 50,
+              "hint": "Short polaroid title."
+            },
+            {
+              "key": "text",
+              "label": "Description",
+              "type": "text",
+              "maxLength": 40,
+              "maxLines": 1,
+              "maxCharsPerLine": 36,
+              "hint": "One line on the card — long text wraps automatically."
+            }
+          ]
+        },
+        {
+          "key": "slides",
+          "label": "Frame media",
+          "type": "subarray",
+          "showWhen": {
+            "field": "displayMode",
+            "equals": "swiper"
+          },
+          "description": "Up to 6 photos that loop in the frame, or one video — not both. Add a card, then upload.",
+          "default": [
+            {
+              "media": "https://pub-1953a6673e864f3488c645252f75de98.r2.dev/Ashish%20%26%20Ayushi/Ashish%20%26%20Ayushi%20swiper%20%20(2).mp4"
+            }
+          ],
+          "maxItems": 6,
+          "mediaRules": {
+            "maxImages": 6,
+            "maxVideos": 1,
+            "exclusive": true
+          },
+          "sortable": true,
+          "itemLabel": "Photo / video",
+          "defaultItem": {
+            "media": ""
+          },
+          "fields": [
+            {
+              "key": "media",
+              "label": "Photo or video",
+              "type": "media-upload",
+              "uploadFolder": "story",
+              "hint": "One video, or up to 6 still photos that loop in the frame."
+            }
+          ]
+        },
+        {
+          "key": "footnote",
+          "label": "Caption below frame",
+          "type": "text",
+          "maxLength": 120,
+          "default": "A moment captured in time, forever in our hearts",
+          "showWhen": {
+            "field": "displayMode",
+            "equals": "swiper"
+          },
+          "suggestionToggleLabel": "Suggest captions",
+          "suggestions": [
+            "A moment captured in time, forever in our hearts",
+            "Every frame tells our story",
+            "Memories we will cherish forever"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "venue",
+      "label": "Venue",
+      "icon": "map-pin",
+      "guideCaption": "Venue photo, address, and a maps button guests tap for directions.",
+      "type": "object",
+      "layoutGroups": [
+        {
+          "id": "titles",
+          "label": "Section titles",
+          "fields": [
+            "subheading",
+            "heading"
+          ]
+        },
+        {
+          "id": "location",
+          "label": "Venue details",
+          "fields": [
+            "name",
+            "address"
+          ]
+        },
+        {
+          "id": "maps",
+          "label": "Map link",
+          "fields": [
+            "mapsUrl",
+            "buttonLabel"
+          ]
+        },
+        {
+          "id": "photo",
+          "label": "Venue photo",
+          "fields": [
+            "image"
+          ]
+        }
+      ],
+      "fields": [
+        {
+          "key": "enabled",
+          "label": "Show venue section",
+          "type": "toggle",
+          "default": true
+        },
+        {
+          "key": "subheading",
+          "label": "Section label",
+          "type": "text",
+          "maxLength": 40,
+          "suggestionToggleLabel": "Suggest labels",
+          "suggestions": [
+            "Where We Gather",
+            "The Venue",
+            "Location"
+          ]
+        },
+        {
+          "key": "heading",
+          "label": "Section heading",
+          "type": "text",
+          "maxLength": 40,
+          "suggestionToggleLabel": "Suggest headings",
+          "suggestions": [
+            "The Venue",
+            "Our Venue",
+            "Celebration Venue"
+          ]
+        },
+        {
+          "key": "name",
+          "label": "Venue name",
+          "type": "text",
+          "maxLength": 80
+        },
+        {
+          "key": "address",
+          "label": "Address",
+          "type": "textarea",
+          "multiline": true,
+          "maxLength": 200
+        },
+        {
+          "key": "image",
+          "label": "Venue photo",
+          "type": "image-upload",
+          "uploadFolder": "venue"
+        },
+        {
+          "key": "mapsUrl",
+          "label": "Google Maps link",
+          "type": "url"
+        },
+        {
+          "key": "buttonLabel",
+          "label": "Maps button label",
+          "type": "text",
+          "maxLength": 30,
+          "default": "View on Maps"
+        }
+      ]
+    },
+    {
+      "id": "events",
+      "label": "Events",
+      "icon": "map-pin",
+      "guideCaption": "Stack of ceremony cards with backgrounds and dress codes.",
+      "type": "object",
+      "layoutGroups": [
+        {
+          "id": "titles",
+          "label": "Section titles",
+          "fields": [
+            "heading",
+            "subheading"
+          ]
+        },
+        {
+          "id": "ceremonies",
+          "label": "Ceremony details",
+          "fields": [
+            "items"
+          ],
+          "fullWidth": true
+        }
+      ],
+      "fields": [
+        {
+          "key": "enabled",
+          "label": "Show events section",
+          "type": "toggle",
+          "default": true
+        },
+        {
+          "key": "heading",
+          "label": "Section Heading",
+          "type": "text",
+          "maxLength": 40,
+          "hint": "Short title above the event cards.",
+          "suggestionToggleLabel": "Suggest headings",
+          "suggestions": [
+            "Festivities",
+            "The Celebrations",
+            "Wedding Events",
+            "Our Celebrations",
+            "Ceremonies & Events"
+          ]
+        },
+        {
+          "key": "subheading",
+          "label": "Section Subheading",
+          "type": "text",
+          "maxLength": 80,
+          "hint": "One line under the heading.",
+          "suggestionToggleLabel": "Suggest subheadings",
+          "suggestions": [
+            "The Celebrations Unfold",
+            "Join us for each special moment",
+            "An itinerary of joy and tradition",
+            "Where love meets celebration",
+            "Mark your calendar for our festivities"
+          ]
+        },
+        {
+          "key": "items",
+          "label": "Ceremony Details",
+          "type": "subarray",
+          "default": [],
+          "sortable": true,
+          "itemLabel": "Event",
+          "summaryKey": "title",
+          "summarySubtitleParts": [
+            "date",
+            "time"
+          ],
+          "defaultItem": {
+            "eventType": "",
+            "title": "Mehendi",
+            "date": "",
+            "time": "",
+            "description": "",
+            "venue": "",
+            "mapsUrl": "",
+            "image": "",
+            "inviteStyle": "light",
+            "dressCode": {
+              "enabled": false,
+              "label": "",
+              "colors": [],
+              "names": ""
+            },
+            "highlighted": false
+          },
+          "fields": [
+            {
+              "key": "eventType",
+              "label": "Event Type",
+              "type": "select",
+              "hidden": true
+            },
+            {
+              "key": "image",
+              "label": "Event Type & Background",
+              "type": "event-bg",
+              "dependsOn": "eventType"
+            },
+            {
+              "key": "inviteStyle",
+              "label": "Text Contrast Style",
+              "type": "select",
+              "hidden": true,
+              "default": "light",
+              "options": [
+                {
+                  "value": "light",
+                  "label": "Light (Dark Text)"
+                },
+                {
+                  "value": "dark",
+                  "label": "Dark (White Text)"
+                },
+                {
+                  "value": "sunset",
+                  "label": "Sunset (Warm/Gold)"
+                },
+                {
+                  "value": "arch",
+                  "label": "Arch (Classic Maroon)"
+                }
+              ]
+            },
+            {
+              "key": "title",
+              "label": "Event Title",
+              "type": "text",
+              "maxLength": 20,
+              "maxWords": 2,
+              "maxLines": 1,
+              "maxCharsPerLine": 18,
+              "hint": "One word looks best on the portrait art — max 2 words, one line only."
+            },
+            {
+              "key": "date",
+              "label": "Date",
+              "type": "date"
+            },
+            {
+              "key": "time",
+              "label": "Time",
+              "type": "text",
+              "maxLength": 30
+            },
+            {
+              "key": "description",
+              "label": "Description",
+              "type": "textarea",
+              "multiline": true,
+              "maxLength": 200,
+              "maxLines": 3,
+              "maxCharsPerLine": 38,
+              "hint": "Press Enter for a new line."
+            },
+            {
+              "key": "venue",
+              "label": "Venue Name",
+              "type": "text",
+              "maxLength": 80
+            },
+            {
+              "key": "mapsUrl",
+              "label": "Google Maps Link",
+              "type": "url"
+            },
+            {
+              "key": "dressCode",
+              "label": "Dress Code",
+              "type": "group",
+              "fields": [
+                {
+                  "key": "enabled",
+                  "label": "Show Dress Code",
+                  "type": "toggle"
+                },
+                {
+                  "key": "label",
+                  "label": "Style (e.g. Cocktail formal)",
+                  "type": "text",
+                  "maxLength": 60
+                },
+                {
+                  "key": "names",
+                  "label": "Color Names (e.g. Rose · Gold)",
+                  "type": "text",
+                  "maxLength": 60
+                },
+                {
+                  "key": "colors",
+                  "label": "Hex Colors",
+                  "type": "list",
+                  "itemType": "color"
+                }
+              ]
+            },
+            {
+              "key": "highlighted",
+              "label": "Highlight this event",
+              "type": "toggle"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rsvp",
+      "label": "RSVP",
+      "icon": "mail",
+      "guideCaption": "RSVP block and modal guests use to confirm attendance.",
+      "type": "object",
+      "layoutGroups": [
+        {
+          "id": "intro",
+          "label": "Form intro",
+          "fields": [
+            "wording"
+          ]
+        },
+        {
+          "id": "fields",
+          "label": "Form fields",
+          "fields": [
+            "formFields"
+          ]
+        },
+        {
+          "id": "questions",
+          "label": "Custom questions",
+          "fields": [
+            "customQuestions"
+          ],
+          "fullWidth": true
+        }
+      ],
+      "fields": [
+        {
+          "key": "enabled",
+          "label": "Show RSVP section",
+          "type": "toggle",
+          "default": true
+        },
+        {
+          "key": "wording",
+          "label": "Intro message",
+          "type": "textarea",
+          "multiline": true,
+          "maxLength": 200,
+          "maxLines": 3,
+          "maxCharsPerLine": 42,
+          "hint": "Press Enter for a new line.",
+          "suggestionToggleLabel": "Suggest intro messages",
+          "suggestions": [
+            "Kindly let us know if you can make it — your presence will make our celebration whole.",
+            "We would be honoured by your presence.\nPlease RSVP at your earliest convenience.",
+            "Your love and blessings mean the world to us.\nKindly confirm your attendance below.",
+            "Join us in celebrating our special day.\nPlease share your RSVP below.",
+            "With love and gratitude,\nwe invite you to confirm your attendance."
+          ]
+        },
+        {
+          "key": "formFields",
+          "label": "Guest form questions",
+          "type": "group",
+          "description": "Name, phone, and marriage advice always appear on the form.",
+          "fields": [
+            {
+              "key": "showAttending",
+              "label": "Show accept / decline question",
+              "type": "toggle",
+              "default": true
+            },
+            {
+              "key": "showGuestCount",
+              "label": "Show party size",
+              "type": "toggle",
+              "default": true
+            },
+            {
+              "key": "showEvents",
+              "label": "Show events to attend",
+              "type": "toggle",
+              "default": true
+            },
+            {
+              "key": "showSongRequest",
+              "label": "Show song request",
+              "type": "toggle",
+              "default": true
+            }
+          ]
+        },
+        {
+          "key": "customQuestions",
+          "label": "Custom Questions",
+          "type": "rsvp-custom-questions",
+          "maxItems": 8,
+          "questionMaxLength": 120,
+          "description": "Extra questions guests answer on your RSVP form. Name, phone, and marriage advice always stay on the form.",
+          "default": [],
+          "itemPresets": [
+            {
+              "label": "🍽️ Dietary preferences",
+              "type": "short-text",
+              "required": false
+            },
+            {
+              "label": "Any allergies we should know?",
+              "type": "short-text",
+              "required": false
+            },
+            {
+              "label": "How did you meet the couple?",
+              "type": "short-text",
+              "required": false
+            },
+            {
+              "label": "Message for the couple",
+              "type": "long-text",
+              "required": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "footer",
+      "label": "Footer",
+      "icon": "align-justify",
+      "guideCaption": "Closing message and couple sign-off at the bottom.",
+      "type": "object",
+      "layoutGroups": [
+        {
+          "id": "message",
+          "label": "Closing message",
+          "fields": [
+            "message"
+          ]
+        },
+        {
+          "id": "signoff",
+          "label": "Sign-off",
+          "fields": [
+            "regards",
+            "couple"
+          ]
+        }
+      ],
+      "fields": [
+        {
+          "key": "enabled",
+          "label": "Show footer",
+          "type": "toggle",
+          "default": true
+        },
+        {
+          "key": "message",
+          "label": "Closing Message",
+          "type": "textarea",
+          "multiline": true,
+          "maxLength": 400,
+          "maxLines": 6,
+          "maxCharsPerLine": 42,
+          "hint": "Press Enter for a new line — blank line = paragraph gap.",
+          "suggestionToggleLabel": "Suggest closing messages",
+          "suggestions": [
+            "Thank you for being part of our journey.\nYour love and blessings mean everything to us.",
+            "We can't wait to celebrate with you.\nSee you on our special day!",
+            "Your presence will make our day unforgettable.\nWith love and gratitude.",
+            "From the bottom of our hearts,\nthank you for sharing in our joy.",
+            "With love, laughter, and blessings,\nwe look forward to celebrating together."
+          ]
+        },
+        {
+          "key": "regards",
+          "label": "Warm Regards from",
+          "type": "text",
+          "multiline": true,
+          "maxLength": 120,
+          "maxLines": 2,
+          "maxCharsPerLine": 40,
+          "hint": "Press Enter if you need two lines.",
+          "suggestionToggleLabel": "Suggest sign-off lines",
+          "suggestions": [
+            "With love and blessings,",
+            "Warm regards from both families,",
+            "With love from our families,",
+            "Mrs. & Mr. Sharma and family",
+            "The Patel & Singh families"
+          ]
+        },
+        {
+          "key": "couple",
+          "label": "Couple Names",
+          "type": "text",
+          "maxLength": 60,
+          "hint": "Filled from Hero → Bride & Groom names when available.",
+          "suggestionSource": "hero-couple",
+          "suggestionToggleLabel": "Suggest couple names",
+          "suggestionToggleLabelHero": "Use bride & groom names",
+          "suggestions": [
+            "Bride & Groom"
+          ]
+        }
+      ]
+    }
+  ]
+}

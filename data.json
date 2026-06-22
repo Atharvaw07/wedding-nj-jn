@@ -1,0 +1,100 @@
+{
+  "petalsEnabled": true,
+  "headingFont": "great-vibes",
+  "colorPalette": "blush-gold",
+  "audio": {
+    "enabled": true,
+    "src": "https://pub-1953a6673e864f3488c645252f75de98.r2.dev/Aadarsh%20%26%20Priyanka/Inn%20Lamhon%20Ke%20Daaman%20Mein%20(mp3cut.net).mp3"
+  },
+  "entry": {
+    "enabled": true,
+    "entryVariantId": "entry-video-envelope-3",
+    "videoUrl": "https://pub-1953a6673e864f3488c645252f75de98.r2.dev/website%20assets/envelope/Best%20Envelope%20(3).mp4",
+    "overlayStyle": "light",
+    "message": ""
+  },
+  "hero": {
+    "enabled": true,
+    "ganeshImageUrl": "https://pub-1953a6673e864f3488c645252f75de98.r2.dev/may/Hemadri%20%26%20Ravindra/GAnesha%20Icon.png",
+    "godQuote": "May Lord Ganesha bless\nour sacred union.",
+    "introLine1": "With heavenly blessings,\nwe delightfully invite you to celebrate the wedding of their beloved child",
+    "connector": "and",
+    "displayOrder": "bride-first",
+    "bride": {
+      "name": "nkj",
+      "familyLine": "Daughter of Mr. & Mrs. Sharma"
+    },
+    "groom": {
+      "name": "m ,",
+      "familyLine": "Son of Mr. & Mrs. Sharma"
+    }
+  },
+  "saveTheDate": {
+    "enabled": true,
+    "weddingDate": "2026-06-27",
+    "scratchEnabled": true,
+    "countdownEnabled": true,
+    "wording": ""
+  },
+  "story": {
+    "enabled": false,
+    "displayMode": "polaroids",
+    "heading": "Forever Us",
+    "subheading": "How we became us, told in moments",
+    "items": [
+      {
+        "image": "https://pub-1953a6673e864f3488c645252f75de98.r2.dev/website%20assets/dummy/virat-kohli--anushka-sharma-100712365-3x4.webp",
+        "caption": "How We Met",
+        "text": "Where our beautiful story began."
+      },
+      {
+        "image": "https://pub-1953a6673e864f3488c645252f75de98.r2.dev/website%20assets/dummy/cropped-Virat-Kohli-and-Anushka-Sharma-220820241724319474.avif",
+        "caption": "First Adventure",
+        "text": "A day full of laughter and joy."
+      },
+      {
+        "image": "https://pub-1953a6673e864f3488c645252f75de98.r2.dev/website%20assets/dummy/Virat-Kohli-and-Anushka-Sharma-2.webp",
+        "caption": "A Special Moment",
+        "text": "Love and warmth in every frame."
+      },
+      {
+        "image": "https://pub-1953a6673e864f3488c645252f75de98.r2.dev/website%20assets/dummy/Kohli-Anushka-2ITG-1748983672590-scaled.avif",
+        "caption": "Together Always",
+        "text": "Side by side through it all."
+      }
+    ],
+    "slides": [],
+    "footnote": "A moment captured in time, forever in our hearts"
+  },
+  "venue": {
+    "enabled": true,
+    "subheading": "Where We Gather",
+    "heading": "Our Venue",
+    "name": "njkm",
+    "address": "jnk",
+    "image": "https://pub-b147f35c3bd843e3834167baded16edb.r2.dev/users/69f9b03a4433c9d930a892a4/venue/61ca0abf-0cf8-45f4-aa5c-9bffb583add1.webp",
+    "mapsUrl": "nkml",
+    "buttonLabel": "jkml"
+  },
+  "events": {
+    "enabled": true,
+    "heading": "",
+    "subheading": "",
+    "items": []
+  },
+  "rsvp": {
+    "enabled": true,
+    "wording": "",
+    "customQuestions": [],
+    "showAttending": true,
+    "showGuestCount": true,
+    "showEvents": true,
+    "showSongRequest": true
+  },
+  "footer": {
+    "enabled": true,
+    "message": "",
+    "regards": "",
+    "couple": ""
+  }
+}
