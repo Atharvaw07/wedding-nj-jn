@@ -11,7 +11,7 @@
     "entryVariantId": "entry-video-envelope-3",
     "videoUrl": "https://pub-1953a6673e864f3488c645252f75de98.r2.dev/website%20assets/envelope/Best%20Envelope%20(3).mp4",
     "overlayStyle": "light",
-    "message": ""
+    "message": "With love and blessings,\nwe invite you to the wedding of:\nnkj & m ,"
   },
   "hero": {
     "enabled": true,
@@ -37,8 +37,8 @@
     "wording": ""
   },
   "story": {
-    "enabled": false,
-    "displayMode": "polaroids",
+    "enabled": true,
+    "displayMode": "swiper",
     "heading": "Forever Us",
     "subheading": "How we became us, told in moments",
     "items": [
@@ -63,7 +63,12 @@
         "text": "Side by side through it all."
       }
     ],
-    "slides": [],
+    "slides": [
+      {
+        "media": "https://pub-b147f35c3bd843e3834167baded16edb.r2.dev/users/69f9b03a4433c9d930a892a4/story/b81960bb-a3dc-46ad-9bd8-f768ec97182f.mp4",
+        "image": ""
+      }
+    ],
     "footnote": "A moment captured in time, forever in our hearts"
   },
   "venue": {
@@ -78,9 +83,46 @@
   },
   "events": {
     "enabled": true,
-    "heading": "",
-    "subheading": "",
-    "items": []
+    "heading": "The Celebrations",
+    "subheading": "Join us for each special moment",
+    "items": [
+      {
+        "eventType": "mehendi",
+        "title": "Mehendi",
+        "date": "2026-06-10",
+        "time": "9:00 PM",
+        "description": "",
+        "venue": "",
+        "mapsUrl": "",
+        "image": "https://pub-1953a6673e864f3488c645252f75de98.r2.dev/website%20assets/events/mehendi/2.png",
+        "inviteStyle": "arch",
+        "dressCode": {
+          "enabled": false,
+          "label": "",
+          "colors": [],
+          "names": ""
+        },
+        "highlighted": false
+      },
+      {
+        "eventType": "haldi",
+        "title": "haldi",
+        "date": "2026-06-27",
+        "time": "9:00 PM",
+        "description": "",
+        "venue": "",
+        "mapsUrl": "",
+        "image": "https://pub-1953a6673e864f3488c645252f75de98.r2.dev/website%20assets/events/haldi/8.png",
+        "inviteStyle": "light",
+        "dressCode": {
+          "enabled": false,
+          "label": "",
+          "colors": [],
+          "names": ""
+        },
+        "highlighted": false
+      }
+    ]
   },
   "rsvp": {
     "enabled": true,
